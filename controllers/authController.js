@@ -1,6 +1,6 @@
 const User = require("../model/userSchema");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const returnSignUpPage = async (req, res) => {
   res.render("signup");
